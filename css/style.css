@@ -81,49 +81,96 @@ body {
 
 /* counter */
 .counter-main-container {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
+}
+.count-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.count-box > img {
+  width: 125px;
+}
+.count-box > span,
+.count-box > p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+@media (max-width: 960px) {
+  .counter-main-container {
+    flex-direction: column;
+  }
+  .counts.py-5 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .count-box {
+    margin: 2rem;
   }
   .count-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 1rem;
   }
   .count-box > img {
-    width: 125px;
+    width: 100px;
   }
-  .count-box > span,
-  .count-box > p {
-    margin: 0;
-    padding: 0;
-    line-height: 1.2;
+}
+@media (max-width: 750px) {
+  .navbar.navbar-expand-md {
+    height: auto;
   }
-  @media (max-width: 960px) {
-    .counter-main-container {
-      flex-direction: column;
-    }
-    .counts.py-5 {
-      padding: 0;
-      margin: 0;
-    }
-  
-    .count-box {
-      margin: 2rem;
-    }
-    .count-box {
-      margin-bottom: 1rem;
-    }
-    .count-box > img {
-      width: 100px;
-    }
+}
+@media (max-width: 500px) {
+  .count-box > img {
+    width: 75px;
   }
-  @media (max-width: 750px) {
-    .navbar.navbar-expand-md {
-      height: auto;
-    }
+}
+
+/* faq */
+#quote,
+#counts,
+#mockup {
+  padding: 130px 0;
+}
+#faq,
+#team {
+  padding: 65px 0;
+}
+.wrapper {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px 20px;
+}
+.wrapper .accordion-button {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.wrapper .accordion-button:focus {
+  box-shadow: none;
+}
+.wrapper .accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #f7f7f7;
+}
+.wrapper .accordion-button.collapsed:last-child {
+  border-bottom: solid 1px black;
+}
+.wrapper .accordion-collapse div p {
+  line-height: 2rem;
+  width: 100%;
+  padding: 0.5rem 1.3rem;
+}
+@media (max-width: 777px) {
+  .wrapper {
+    margin: 50px 20px;
   }
-  @media (max-width: 500px) {
-    .count-box > img {
-      width: 75px;
-    }
+}
+@media (max-width: 365px) {
+  .wrapper {
+    margin: 50px 10px;
   }
-  
+  .w-75 {
+    width: 90% !important;
+  }
+}
