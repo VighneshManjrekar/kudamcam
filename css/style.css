@@ -174,3 +174,154 @@ body {
     width: 90% !important;
   }
 }
+
+/* steps */
+.steps {
+  padding: 65px 0;
+  max-width: 1000px;
+  margin: auto;
+}
+.steps .row {
+  overflow: hidden;
+}
+.steps .content-item {
+  padding: 40px;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin: -1px;
+}
+.steps .content-item span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  color: #3b4ef8;
+}
+.steps .content-item h4 {
+  font-size: 28px;
+  font-weight: 400;
+  padding: 0;
+  margin: 20px 0;
+  color: #2d405f;
+}
+.steps .content-item p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+/* mockup android */
+#mockup {
+  width: 100%;
+}
+.container.px-5 {
+  max-width: 1000px;
+  margin: auto;
+}
+.device-wrapper {
+  max-width: 300px;
+  width: 100%;
+}
+.device {
+  position: relative;
+  background-size: cover;
+}
+
+.device::after {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.device .screen {
+  position: absolute;
+  background-size: cover;
+  pointer-events: auto;
+}
+
+.device .button {
+  position: absolute;
+  cursor: pointer;
+}
+
+.device.device-mockup {
+  padding-bottom: 198.898071625%;
+}
+
+.device.device-mockup .screen {
+  top: 3.1855955679%;
+  left: 6.8870523416%;
+  width: 86.2258953168%;
+  height: 93.6288088643%;
+}
+
+.device.device-mockup::after {
+  content: "";
+  background-image: url("../images/portrait_black.png");
+}
+.device.device-mockup .button {
+  display: none;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+.mockup-img {
+  max-width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 950px) {
+  .d-flex.flex-column.flex-lg-row.align-items-center {
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+/* about us */
+#team {
+  padding: 60px 0;
+  overflow: hidden;
+}
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#team .member .pic {
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 260px;
+}
+#team .member .pic img {
+  max-width: 100%;
+}
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+#team .member .social {
+  margin-top: 15px;
+}
+#team .member .social a {
+  color: #b3b3b3;
+}
+#team .member .social a:hover {
+  color: #1dc8cd;
+}
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+/* footer */
+.text-center.p-3.footer-bg {
+  background-color: rgba(0, 0, 0, 0.2);
+}
