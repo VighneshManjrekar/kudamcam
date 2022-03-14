@@ -34,3 +34,41 @@ body {
 .nav.navbar-nav.mb-2.mb-lg-0 {
   margin-left: auto;
 }
+
+/* banner section */
+.image-overlay-container {
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+  .image-overlay-container > .img-fluid {
+    background-image: url("https://images.unsplash.com/photo-1510251197878-a2e6d2cb590c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 70px);
+  }
+  .text {
+    letter-spacing: 1.5px;
+    color: white;
+    position: absolute;
+    width: 70%;
+    max-width: 750px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: hsla(0, 0%, 0%, 0.726);
+  }
+  
