@@ -76,7 +76,106 @@
                     </div>
                 </div>
         </section>
+        <section id="quote">
+            <div class="container h-100">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="col col-lg-9 col-xl-7">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body p-5">
+
+                                <div class="text-center mb-4 pb-2">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-quotes/bulb.webp"
+                                        alt="Bulb" width="100">
+                                </div>
+
+                                <figure class="text-center mb-0">
+                                    <blockquote class="blockquote">
+                                        <p class="pb-3">
+                                            <i class="fas fa-quote-left fa-xs text-primary"></i>
+                                            <span class="lead font-italic">"Be the change you wish to see in the
+                                                world."</span>
+                                            <i class="fas fa-quote-right fa-xs text-primary"></i>
+                                        </p>
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer mb-0">
+                                        Mahatma Gandhi
+                                    </figcaption>
+                                </figure>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
+<script>
+    const quotes = [{
+            title: "I alone cannot change the world, but I can cast a stone across the waters to create many ripples.",
+            author: "Mother Teresa"
+        },
+        {
+            title: "Everyone thinks of changing the world, but no one thinks of changing himself.",
+            author: "Leo Tolstoy"
+        },
+        {
+            title: "Most people want to change the world to improve their lives, but the world they need to change first is the one inside themselves.",
+            author: "John C. Maxwell"
+        },
+        {
+            title: "You don’t have to change the world. You just have to change what you pay attention to in the world. And that, it turns out, is hugely powerful",
+            author: "Vishen Lakhiani"
+        },
+        {
+            title: "You are here in order to enable the world to live more amply, with greater vision, with a finer spirit of hope and achievement. You are here to enrich the world.",
+            author: "Woodrow Wilson"
+        },
+        {
+            title: "If you want to change the world, start with yourself.",
+            author: "Mahatma Gandhi"
+        },
+        {
+            title: "I alone cannot change the world, but I can cast a stone across the waters to create many ripples.",
+            author: "Mother Teresa"
+        },
+        {
+            title: "The only way forward, if we are going to improve the quality of the environment, is to get everybody involved.",
+            author: "Richard Rogers"
+        },
+        {
+            title: "Environment is no one’s property to destroy; it’s everyone’s responsibility to protect.",
+            author: "Mohith Agadi"
+        },
+        {
+            title: "Littering is a crime, but they are not enforcing the law. We need to educate the youths on why littering is bad and the effect litter has on neighbourhoods.",
+            author: "Johnnise Downs"
+        }, {
+            title: "Don’t be a litter bag. Help keep your community clean.",
+            author: "Anonymous"
+        },
+        {
+            title: "It gives people the power to say ‘I just witnessed littering and I don’t like littering in my community. I’m going to turn this over and see if I can get this stopped.",
+            author: "Mark Pope"
+        },
+        {
+            title: "I alone cannot change the world, but I can cast a stone across the waters to create many ripples.",
+            author: "Mother Teresa"
+        },
+        {
+            title: "I alone cannot change the world, but I can cast a stone across the waters to create many ripples.",
+            author: "Mother Teresa"
+        },
+        {
+            title: "I alone cannot change the world, but I can cast a stone across the waters to create many ripples.",
+            author: "Mother Teresa"
+        },
 
+    ]
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const quote = quotes[Math.floor(Math.random() * quotes.length)]
+        document.querySelector('.lead.font-italic').innerHTML = quote.title
+        document.querySelector('.blockquote-footer.mb-0').innerHTML = quote.author
+    });
+</script>
 </html>
