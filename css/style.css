@@ -325,3 +325,15 @@ body {
 .text-center.p-3.footer-bg {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+
+/* AQI */
+#main{
+  display: flex;
+  height: 100vh;
+}
+
+#map,#data{
+  width: 100vw;
+  height: calc(100vh - 70px);
+}
