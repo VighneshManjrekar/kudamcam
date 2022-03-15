@@ -80,50 +80,20 @@ body {
 }
 
 /* counter */
-.counter-main-container {
-  justify-content: space-evenly;
+.col-lg-3.col-md-6.col-sm-6.text-center img{
+  width: 150px;
 }
-.count-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.col-lg-3.col-md-6.col-sm-6.text-center p.fs-3.mt-1{
+  margin-bottom: 0;
 }
-.count-box > img {
-  width: 125px;
-}
-.count-box > span,
-.count-box > p {
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
-}
-@media (max-width: 960px) {
-  .counter-main-container {
-    flex-direction: column;
-  }
-  .counts.py-5 {
-    padding: 0;
-    margin: 0;
-  }
-
-  .count-box {
-    margin: 2rem;
-  }
-  .count-box {
-    margin-bottom: 1rem;
-  }
-  .count-box > img {
-    width: 100px;
+@media (max-width: 900px) {
+  .col-lg-3.col-md-6.col-sm-6.text-center{
+    margin-top: 1rem;
   }
 }
-@media (max-width: 750px) {
-  .navbar.navbar-expand-md {
-    height: auto;
-  }
-}
-@media (max-width: 500px) {
-  .count-box > img {
-    width: 75px;
+ @media (max-width: 500px) {
+  .col-lg-3.col-md-6.col-sm-6.text-center img{
+    width: 125px;
   }
 }
 
