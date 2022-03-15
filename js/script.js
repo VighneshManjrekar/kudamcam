@@ -1,12 +1,6 @@
-var options = {
-    enableHighAccuracy: true,
-    timeout: 5000,
-    maximumAge: 0
-  };
-navigator.geolocation.getCurrentPosition((position,err,options) => {
+navigator.geolocation.getCurrentPosition((position) => {
     const p = position.coords;
     createMap(p.latitude, p.longitude)
-    console.log(p.accuracy)
 })
 
 const createMap = (lon, lat) => {
@@ -27,7 +21,7 @@ const createMap = (lon, lat) => {
 }
 
 const getAQI = (marker, lat, lon) => {
-    fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=530b6a2489d5301ce4f9bf3af5b1948c`)
+    fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${env.key}`)
         .then(res => res.json())
         .then(data => {
             makeTable(data.list[0])
@@ -36,7 +30,7 @@ const getAQI = (marker, lat, lon) => {
 }
 
 const makeTable = (data) => {
-    
+
     const table = document.querySelector('.table');
     table.innerHTML = ""
     const tHead = document.createElement('thead');
