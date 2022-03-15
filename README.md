@@ -1,2 +1,2 @@
-# Clean_Me-Website
+# KudaCam
 SIH 2022 Website static frontend
