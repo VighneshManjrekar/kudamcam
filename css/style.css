@@ -262,7 +262,10 @@ body {
 #team .member .pic {
   margin-bottom: 15px;
   overflow: hidden;
-  height: 260px;
+  height: auto;
+}
+#team .member .pic #jaydip-profile-img{
+  border: solid 2px lightgray;
 }
 #team .member .pic img {
   max-width: 100%;
@@ -289,6 +292,21 @@ body {
 #team .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+@media(max-width:575px){
+  #team .member .pic img {
+    width: 250px;
+  }
+}
+@media(max-width:400px){
+  #team .member .pic {
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: auto;
+}
+  #team .member .pic img {
+    width: 200px;
+  }
 }
 
 /* footer */
