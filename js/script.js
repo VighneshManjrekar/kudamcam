@@ -2,7 +2,10 @@ import AQI_KEY from './config.js'
 
 navigator.geolocation.getCurrentPosition((position) => {
     const p = position.coords;
-    createMap(p.latitude, p.longitude)
+    if (p.latitude && p.longitude) {
+        document.querySelector('.location-warning').style.display = "none"
+        createMap(p.latitude, p.longitude)
+    }
 })
 
 
