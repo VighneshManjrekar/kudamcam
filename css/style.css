@@ -314,14 +314,15 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-
-/* AQI */
-#main{
-  display: flex;
-  height: 100vh;
+/* map */
+#map{
+  height: 50vh;
 }
-
-#map,#data{
-  width: 100vw;
-  height: calc(100vh - 70px);
+#data{
+  max-width: 500px;
+}
+@media(min-width:990px){
+  #map{
+    height: calc(100vh - 70px);
+  }
 }
