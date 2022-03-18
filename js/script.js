@@ -1,3 +1,5 @@
+import AQI_KEY from './config.js'
+
 navigator.geolocation.getCurrentPosition((position) => {
     const p = position.coords;
     createMap(p.latitude, p.longitude)
@@ -22,7 +24,7 @@ const createMap = (lon, lat) => {
 }
 
 const getAQI = (marker, lat, lon) => {
-    fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${env.key}`)
+    fetch(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${AQI_KEY}`)
         .then(res => res.json())
         .then(data => {
             makeTable(data.list[0])
